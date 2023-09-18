@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import MenuProducts_27 from "../../components/MenuProducts_27";
 
+
 const base_url = `https://xuwztydqqoyqwrjsgfbd.supabase.co/rest/v1/menu_xx?select=*`;
 
 let url = `${base_url}`;
@@ -91,7 +92,9 @@ const MenuSupabasePage_27 = () => {
 
 
     return (
+      
         <section className="all">
+          
             <form onSubmit={handleSubmit}>
 
             <div className="btn-container"></div>
@@ -138,6 +141,9 @@ const MenuSupabasePage_27 = () => {
                         
                     </div>
                    <MenuProducts_27 products={products}/>
+                  <a href="/supa_cart_27" class="submit">
+                    <button type="button" className="menu-right">結帳點我</button>
+                  </a>
                 </section>
             </div>
             </form>

@@ -200,13 +200,14 @@ Menu
 }
 
 .menu-right {
-  width: 4.35rem;
-  height: 4.4rem;
+  width: 6rem;
+  height: 6rem;
   cursor: pointer;; 
   position: fixed; 
   bottom: 0.1rem;
   right: 1.0rem;
   z-index: 9999;
+  background-color: rgba(251,75,2,1);
 }
 
 .title {

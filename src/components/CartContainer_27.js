@@ -17,8 +17,8 @@ const CartContainer = () => {
       <section className='cart'>
         {/* cart header */}
         <header>
-          <h2>your bag</h2>
-          <h4 className='empty-cart'>is currently empty</h4>
+          <h2>點餐成功</h2>
+          <h4 className='empty-cart'>請至櫃台結帳</h4>
         </header>
       </section>
     );
@@ -52,7 +52,7 @@ const CartContainer = () => {
           </h4>
         </div>
         <button className='btn clear-btn' onClick={clearCart}>
-          clear cart
+          送出
         </button>
       </footer>
     </section>

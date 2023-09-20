@@ -5,6 +5,8 @@ import CartItem from './CartItem_27';
 import { useGlobalContext_xx } from '../pages/order/Context_27';
 
 const CartContainer = () => {
+  const {amount} = useGlobalContext_xx()
+
   // const [cart, setCart] = useState(data);
   // const [total, setTotal] = useState(0);
   // const [amount, setAmount] = useState(0);
@@ -39,6 +41,12 @@ const CartContainer = () => {
       <footer>
         <hr />
         <div className='cart-total'>
+          <h4>
+            目前金額: <span>${total}</span>
+          </h4>
+          
+        </div>
+        <div className='cart-total2'>
           <h4>
             total <span>${total}</span>
           </h4>

@@ -202,6 +202,7 @@ Menu
 .menu-right {
   width: 6rem;
   height: 6rem;
+  font-size: 20px;
   cursor: pointer;; 
   position: fixed; 
   bottom: 0.1rem;
@@ -445,6 +446,7 @@ Navbar
 nav {
   background: var(--clr-primary);
   padding: 1.25rem 2rem;
+  
 }
 .nav-center {
   max-width: var(--fixed-width);
@@ -462,10 +464,20 @@ nav h3 {
   display: block;
   position: relative;
 }
+.nav-container2 {
+  display: block;
+  position: relative;
+  cursor: pointer;; 
+  position: fixed; 
+  bottom: 0.1rem;
+  right: 1.0rem;
+  z-index: 9999;
+}
 nav svg {
   width: 2rem;
   fill: var(--clr-white);
 }
+
 .amount-container {
   position: absolute;
   top: -0.85rem;
@@ -513,8 +525,20 @@ Cart
 .cart footer {
   margin-top: 4rem;
   text-align: center;
+  
 }
 .cart-total h4 {
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  cursor: pointer;; 
+  position: fixed; 
+  bottom: 0.1rem;
+  right: 1.0rem;
+  z-index: 9999;
+}
+.cart-total2 h4 {
   text-transform: capitalize;
   display: flex;
   justify-content: space-between;

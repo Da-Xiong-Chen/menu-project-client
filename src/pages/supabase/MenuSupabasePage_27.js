@@ -130,14 +130,14 @@ const MenuSupabasePage_27 = () => {
         
                     </div>
                     <div className="btn-container">
-                        <button type="button" className="filter-btn" data-id="all" onClick={() => { changeFilter('all'); }}>all</button>
+                        <button type="button" className="filter-btn" data-id="all" onClick={() => { changeFilter('all'); }}><span>All</span></button>
                         <button type="button" className="filter-btn"
                             data-id="hotpot" onClick={() => { changeFilter('HotPot'); }}>
-                            HotPot</button>
+                            <span>HotPot</span></button>
                             <button type="button" className="filter-btn" data-id="sideMeal" onClick={() => { changeFilter('sideMeal'); }}>
-                            sideMeal</button>
+                            <span>SideMeal</span></button>
                             <button type="button" className="filter-btn" data-id="else" onClick={() => { changeFilter('else'); }}>
-                            else</button>
+                            <span>Else</span></button>
                         
                     </div>
                    <MenuProducts_27 products={products}/>

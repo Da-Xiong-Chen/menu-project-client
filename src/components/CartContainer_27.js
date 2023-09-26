@@ -1,11 +1,19 @@
 import React, { useState } from 'react';
 import CartItem from './CartItem_27';
+import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+
 // import data from '../data';
 
 import { useGlobalContext_xx } from '../pages/order/Context_27';
 
 const CartContainer = () => {
   const {amount} = useGlobalContext_xx()
+
+  const location = useLocation();
+  const searchParams = new URLSearchParams(location.search);
+    const inputValue = searchParams.get('inputValue');
+
 
   // const [cart, setCart] = useState(data);
   // const [total, setTotal] = useState(0);
@@ -27,7 +35,7 @@ const CartContainer = () => {
     <section className='cart'>
       {/* cart header */}
       <header>
-      <h2><a href="/supa_menu_27" class="submit">回上一頁菜單</a></h2>
+      <h2><Link to={`/supa_menu_27?inputValue=${encodeURIComponent(inputValue)}`} class="submit">回上一頁菜單</Link></h2>
         <h2>您點的項目</h2>
 
       </header>

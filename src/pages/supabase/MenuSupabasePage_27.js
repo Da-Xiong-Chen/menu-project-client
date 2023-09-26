@@ -1,5 +1,8 @@
-import { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import MenuProducts_27 from "../../components/MenuProducts_27";
+import { useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+
 
 
 const base_url = `https://xuwztydqqoyqwrjsgfbd.supabase.co/rest/v1/menu_xx?select=*`;
@@ -21,6 +24,11 @@ const MenuSupabasePage_27 = () => {
     const [products, setProducts] = useState([]);
     const [searchName, setSearchName] = useState('');
     const [searchName2, setSearchName2] = useState('');
+
+    const location = useLocation();
+  const searchParams = new URLSearchParams(location.search);
+    const inputValue = searchParams.get('inputValue');
+
     
     // const params = useParams();
     // console.log('params category', params.category);
@@ -41,6 +49,9 @@ const MenuSupabasePage_27 = () => {
         });
         setProducts(filterMeets);
       } , [searchName2]);
+
+     
+    
 
       const handleSubmit = async (e) => {
         e.preventDefault();
@@ -101,8 +112,11 @@ const MenuSupabasePage_27 = () => {
             <div className="section-center">
                 <section className="menu">
                     <div className="title">
+                    <h3 className="tablenumber">您的桌號：{inputValue}</h3>
                         <h2>English Menu</h2>
                         <div className="underline"></div>
+                        <div>
+    </div>
                         <div className="search">
         <input
                 type="text"
@@ -141,9 +155,9 @@ const MenuSupabasePage_27 = () => {
                         
                     </div>
                    <MenuProducts_27 products={products}/>
-                  <a href="/supa_cart_27" class="submit">
+                   <Link to={`/supa_cart_27?inputValue=${encodeURIComponent(inputValue)}`} className="submit">
                     <button type="button" className="menu-right">結帳點我</button>
-                  </a>
+                  </Link>
                 </section>
             </div>
             </form>

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 
+
 const HomePage_27 = () => {
 
   const [inputValue, setInputValue] = useState('');
@@ -11,11 +12,12 @@ const HomePage_27 = () => {
   };
 
     return (
-        <div class="login-box">
+      <div className="homepage-background">
+        <div className="login-box">
   <h2>歡迎光臨<br/> 請輸入您的桌號</h2>
   <form>
-    <div class="user-box">
-      <input type="text" value={inputValue} onChange={handleInputChange} name="" required=""/>
+    <div className="user-box">
+      <input type="text" value={inputValue} onChange={handleInputChange} placeholder="请输入您的桌號 1-100" name="" required=""/>
       <label>請輸入您的桌號</label>
     </div>
     <Link to={`/supa_menu_27?inputValue=${encodeURIComponent(inputValue)}`} className="submit">
@@ -26,6 +28,7 @@ const HomePage_27 = () => {
           點餐去
         </Link>
   </form>
+  </div>
 </div>
 
     )

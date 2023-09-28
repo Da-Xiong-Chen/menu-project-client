@@ -47,10 +47,6 @@ body {
   /* background: #36b9c1; */
   /* background: linear-gradient(#141e30, #243b55); */
   background-color: #ffffff;
-    background-image: url('https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); 
-    background-size: cover; /* 让背景图片覆盖整个容器 */
-    background-repeat: no-repeat; /* 防止背景图片重复显示 */
-    background-position: center; /* 将背景图片居中 */
 
 }
 

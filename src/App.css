@@ -47,7 +47,10 @@ body {
   /* background: #36b9c1; */
   /* background: linear-gradient(#141e30, #243b55); */
   background-color: #ffffff;
-
+  background-image: url('https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-size: cover; /* 让背景图片覆盖整个容器 */
+  background-repeat: no-repeat; /* 防止背景图片重复显示 */
+  background-position: center; /* 将背景图片居中 */
 }
 
 .homepage-background {
@@ -151,7 +154,7 @@ body {
   left: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, transparent, #03e9f4);
+  background: linear-gradient(90deg, transparent, #F75000);
   animation: btn-anim1 1s linear infinite;
 }
 
@@ -169,7 +172,7 @@ body {
   right: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(180deg, transparent, #03e9f4);
+  background: linear-gradient(180deg, transparent, #F75000);
   animation: btn-anim2 1s linear infinite;
   animation-delay: .25s
 }
@@ -188,7 +191,7 @@ body {
   right: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(270deg, transparent, #03e9f4);
+  background: linear-gradient(270deg, transparent, #F75000);
   animation: btn-anim3 1s linear infinite;
   animation-delay: .5s
 }
@@ -207,7 +210,7 @@ body {
   left: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(360deg, transparent, #03e9f4);
+  background: linear-gradient(360deg, transparent, #F75000);
   animation: btn-anim4 1s linear infinite;
   animation-delay: .75s
 }

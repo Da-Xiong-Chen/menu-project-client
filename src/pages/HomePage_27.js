@@ -14,6 +14,10 @@ const HomePage_27 = () => {
     return (
       <div className="homepage-background">
         <div className="login-box">
+        <div class="wave -one right"></div>
+        <div class="wave -two right"></div>
+        <div class="wave -three right"></div>
+
   <h2>歡迎光臨<br/> 請輸入您的桌號</h2>
   <form>
     <div className="user-box">

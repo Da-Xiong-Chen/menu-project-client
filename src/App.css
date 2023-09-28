@@ -60,6 +60,53 @@ body {
   /* 可以添加其他背景样式属性，例如背景颜色、透明度等 */
 }
 
+.wave {
+  width: 700px;
+  height: 700px;
+  opacity: 0.4;
+  position: absolute;
+  left: 0;
+  background: #ff9912;
+  border-radius: 40%;
+  /* transform-origin: 50% 48%; */
+  transition: left 2s;
+  animation: drift 6000ms infinite linear;
+  margin-left: 280px;
+}
+.wave.-three {
+  animation: drift 7000ms infinite linear;
+  margin-left: 270px;
+}
+
+.wave.-two {
+  animation: drift 10000ms infinite linear;
+  background-color: yellow;
+  opacity: 0.1;
+  margin-left: 260px;
+}
+
+.wave.right {
+  margin-top: -250px;
+}
+
+@keyframes drift {
+  from {
+    transform: rotate(0deg);
+  }
+  from {
+    transform: rotate(360deg);
+  }
+}
+
+.namecard:hover {
+  transform: translate3d(-5px, -5px, 0);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+  /* 滑鼠碰觸時讓卡片向左上飄移 */
+}
+
+.namecard:hover .wave.right {
+  left: 70px;
+}
 
 .login-box {
   position: absolute;
@@ -75,6 +122,13 @@ body {
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0,0,0,.6);
   border-radius: 10px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  /* --------------------------------------------------- */
+  transition: all 0.5s; /* transition 教課時記得寫完動畫再加上此屬性*/
 }
 
 .login-box h2 {

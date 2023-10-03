@@ -25,6 +25,7 @@ const AppProvider_27 = ({children}) => {
   useEffect(() => {
     dispatch({type: 'GET_TOTALS'});
   },[state.cart] )
+  
   const clearCart = () => {
     dispatch({ type: 'CLEAR_CART' });  
   }

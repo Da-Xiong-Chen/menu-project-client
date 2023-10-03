@@ -1,6 +1,7 @@
 const Reducer_27 = (state, action) => {
     if (action.type === 'CLEAR_CART') {
-        return { ...state, cart: [], amount: 0, total: 0 }
+        const cartToClear = state.cart.filter((item) => item.amount >= 1);
+        return { ...state,cart: cartToClear, amount: 0, total: 0 };
     }
 
     if (action.type === 'INCREASE') {

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import CartItem from './CartItem_27';
+import CartItem2 from './CartItem_Finish';
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 
@@ -19,16 +20,50 @@ const CartContainer = () => {
   // const [total, setTotal] = useState(0);
   // const [amount, setAmount] = useState(0);
   const {cart, total, clearCart } = useGlobalContext_xx();
-  if (cart.length === 0) {
+  if (cart.length <= 45) {
     return (
 
       <section className='cart'>
-        {/* cart header */}
-        <header>
-          <h2>點餐成功</h2>
-          <h4 className='empty-cart'>請至櫃台結帳</h4>
-        </header>
-      </section>
+      {/* cart header */}
+      <header>
+      <div className='cart2'>       
+        <h2>點餐成功</h2>
+        <h3>您點的項目</h3>
+        <h4>
+            今日消費金額為 <span>${total}</span>
+          </h4>
+           <h4 className='empty-cart'>請持此頁面至櫃台結帳</h4>
+        </div>
+
+      </header>
+      {/* cart items */}
+      <div className='cart1'>
+        {cart.map((item) => {
+          return <CartItem2 key={item.id} {...item} />;
+        })}
+      </div>
+      {/* cart footer */}
+      <footer>
+        <div className='cart-total'>
+          <h4>
+            目前金額: <span>${total}</span>
+          </h4>
+        </div>
+  
+        <h4 className='empty-cart'>請持此頁面至櫃台結帳</h4>
+
+        {/* <button className='btn clear-btn' onClick={clearCart}>
+          送出
+        </button> */}
+      </footer>
+    </section>
+      // <section className='cart'>
+      //   {/* cart header */}
+      //   <header>
+      //     <h2>點餐成功</h2>
+      //     <h4 className='empty-cart'>請至櫃台結帳</h4>
+      //   </header>
+      // </section>
     );
   }
   return (

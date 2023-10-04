@@ -20,7 +20,45 @@ const CartContainer = () => {
   // const [total, setTotal] = useState(0);
   // const [amount, setAmount] = useState(0);
   const {cart, total, clearCart } = useGlobalContext_xx();
-  if (cart.length <= 45) {
+
+  if (cart.length === 0) {
+    return (
+      <section className='cart'>
+      {/* cart header */}
+      <header>
+      <div className='cart2'>       
+        <h2>點餐失敗</h2>
+        <h3>您未點選任何項目</h3>
+        
+        </div>
+
+      </header>
+      {/* cart items */}
+      <div className='cart1'>
+        {cart.map((item) => {
+          return <CartItem2 key={item.id} {...item} />;
+        })}
+      </div>
+      {/* cart footer */}
+      <footer>
+        <div className='cart-total'>
+          <h4>
+            目前金額: <span>${total}</span>
+          </h4>
+        </div>
+  
+        <button className='custom-btn btn-3'><span><Link to={`https://menu-project-client.vercel.app/`} className='word' >點我重新點餐</Link></span></button>
+
+
+        {/* <button className='btn clear-btn' onClick={clearCart}>
+          送出
+        </button> */}
+      </footer>
+    </section>
+    );
+  };
+
+  if (cart.length <= 30) {
     return (
 
       <section className='cart'>
@@ -50,7 +88,7 @@ const CartContainer = () => {
           </h4>
         </div>
   
-        <h4 className='empty-cart'>請持此頁面至櫃台結帳</h4>
+        <h4 className='empty-cart'>點餐成功 請持此頁面至櫃台結帳</h4>
 
         {/* <button className='btn clear-btn' onClick={clearCart}>
           送出
@@ -71,7 +109,7 @@ const CartContainer = () => {
       {/* cart header */}
       <header>
       <h2><Link to={`/supa_menu_27?inputValue=${encodeURIComponent(inputValue)}`} class="submit">回上一頁菜單</Link></h2>
-        <h2>您點的項目</h2>
+        <h2>今日提供的餐點</h2>
 
       </header>
       {/* cart items */}

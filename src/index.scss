@@ -564,7 +564,8 @@ Navbar
   background-color: #ffffff;
 }
 nav {
-  background: var(--clr-primary);
+  // background: var(--clr-primary);
+  background-color:#FF8000 ;
   padding: 1.25rem 2rem;
   
 }
@@ -664,6 +665,14 @@ Cart
   justify-content: space-between;
   margin-top: 1rem;
 }
+.paymoney {
+  width: 30%;
+  height: 20%;
+  justify-content: center; 
+  text-align: center;
+  margin: 0 auto;
+}
+
 .clear-btn {
   background: transparent;
   padding: 0.5rem 1rem;

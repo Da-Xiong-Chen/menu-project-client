@@ -70,7 +70,7 @@ const CartContainer = () => {
         <h4>
             今日消費金額為 <span>${total}</span>
           </h4>
-           <h4 className='empty-cart'>請持此頁面至櫃台結帳</h4>
+           <h4 className='empty-cart'>請持此頁面至櫃台</h4>
         </div>
 
       </header>
@@ -88,7 +88,13 @@ const CartContainer = () => {
           </h4>
         </div>
   
-        <h4 className='empty-cart'>點餐成功 請持此頁面至櫃台結帳</h4>
+        <h4 className='empty-cart'>點餐成功 請持此頁面至櫃台或掃下面QR code結帳</h4>
+        <div className='paymoney'>
+            <img src='https://xuwztydqqoyqwrjsgfbd.supabase.co/storage/v1/object/public/demo-27/menu_project_img/money.png'></img>
+         </div>
+
+         <button className='custom-btn btn-3'><span><Link to={`https://epkaw.easycard.com.tw/deepLink/receiver/0/2202302053136152`} className='word' >結帳去</Link></span></button>
+
 
         {/* <button className='btn clear-btn' onClick={clearCart}>
           送出

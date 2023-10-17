@@ -70,7 +70,7 @@ const CartContainer = () => {
         <h4>
             今日消費金額為 <span>${total}</span>
           </h4>
-           <h4 className='empty-cart'>請持此頁面至櫃台</h4>
+           <h4 className='empty-cart'>請持此頁面至櫃台或使用悠遊付支付</h4>
         </div>
 
       </header>
@@ -88,7 +88,7 @@ const CartContainer = () => {
           </h4>
         </div>
   
-        <h4 className='empty-cart'>點餐成功 請持此頁面至櫃台或掃下面QR code結帳</h4>
+        <h4 className='empty-cart'>點餐成功 請持此頁面至櫃台或使用悠遊付結帳<br/>線上結帳請於備註打上桌號以及點的餐點編號和點的數量<br/>例如12桌梅花豬肉鍋2份+4份麻辣鴨血請在備註打上12桌3*2+44*4</h4>
         <div className='paymoney'>
             <img src='https://xuwztydqqoyqwrjsgfbd.supabase.co/storage/v1/object/public/demo-27/menu_project_img/money.png'></img>
          </div>

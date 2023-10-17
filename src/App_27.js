@@ -9,7 +9,8 @@ import SupaMenuPage_27 from "./pages/supabase/MenuSupabasePage_27";
 import MenuByCategoryPage_27 from "./pages/supabase/MenuByCategoryPage_27";
 
 import MenuNodePage_27 from "./pages/node/MenuNodePage_27";
-import Cartpage_27 from "./pages/order/App_27"
+import Cartpage_27 from "./pages/order/App_27";
+import ChoosePage from "./pages/choose/ChoosePage_27";
 
 
 
@@ -24,6 +25,7 @@ const App_27 = () => {
         <Route path='/supa_menu_27' element={<SupaMenuPage_27 />} />
         <Route path='/supa_menu_27/:category' element={<MenuByCategoryPage_27 />} />
         <Route path='/supa_cart_27' element={<Cartpage_27 />} />
+        <Route path='/choose_page_27' element={<ChoosePage />} />
 
         <Route path='/node_menu_27' element={<MenuNodePage_27 />} />
 

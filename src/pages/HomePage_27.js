@@ -24,7 +24,7 @@ const HomePage_27 = () => {
       <input type="text" value={inputValue} onChange={handleInputChange} placeholder="请输入您的桌號 1-100" name="" required=""/>
       <label>請輸入您的桌號</label>
     </div>
-    <Link to={`/supa_menu_27?inputValue=${encodeURIComponent(inputValue)}`} className="submit">
+    <Link to={`/choose_page_27?inputValue=${encodeURIComponent(inputValue)}`} className="submit">
           <span></span>
           <span></span>
           <span></span>

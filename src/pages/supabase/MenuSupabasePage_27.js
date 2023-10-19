@@ -113,8 +113,10 @@ const MenuSupabasePage_27 = () => {
                 <section className="menu">
                     <div className="title">
                     <h3 className="tablenumber">您的桌號：{inputValue}</h3>
-                        <h2>English Menu</h2>
+                    <h2><Link to={`/choose_page_27?inputValue=${encodeURIComponent(inputValue)}`} class="submit">回選單頁面</Link></h2>
+                    <h2>English Menu</h2>
                         <div className="underline"></div>
+                        
                         <div>
     </div>
                         <div className="search">
@@ -156,7 +158,7 @@ const MenuSupabasePage_27 = () => {
                     </div>
                    <MenuProducts_27 products={products}/>
                    <Link to={`/supa_cart_27?inputValue=${encodeURIComponent(inputValue)}`} className="submit">
-                    <button type="button" className="menu-right">結帳點我</button>
+                    <button type="button" className="menu-right">點餐點我</button>
                   </Link>
                 </section>
             </div>

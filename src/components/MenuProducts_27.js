@@ -7,7 +7,7 @@ const MenuProducts_27 = ({products}) => {
             const { id, title, img, price, descrip, chinese } = product;
             return (
               <article className="menu-item" key={id}>
-                <img src={img} alt="eggs" className="photo" />
+                <img src={img} alt="這是照片" className="photo" />
                                     <div className="item-info">
                                         <header>
                                             <h4>{title}</h4>

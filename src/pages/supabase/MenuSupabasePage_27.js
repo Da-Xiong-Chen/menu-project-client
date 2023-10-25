@@ -112,10 +112,11 @@ const MenuSupabasePage_27 = () => {
             <div className="section-center">
                 <section className="menu">
                     <div className="title">
-                    <h3 className="tablenumber">您的桌號：{inputValue}</h3>
+                    <h2 className="menutablenumber">您的桌號：{inputValue}</h2>
                     <h2><Link to={`/choose_page_27?inputValue=${encodeURIComponent(inputValue)}`} class="submit">回選單頁面</Link></h2>
                     <h2>English Menu</h2>
                         <div className="underline"></div>
+                        <hr className="space"/>
                         
                         <div>
     </div>

@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className='nav-center'>
-      <h3 className="tablenumber">歡迎來到點餐最後一步了 您的桌號：{inputValue}</h3>
+      <h3 className="tablenumber">歡迎來到點餐頁面 結帳請按頁面下方送出按鈕 您的桌號：{inputValue}</h3>
         {/* <h3>Order Menu</h3> */}
         <div className='nav-container'>
           <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'>

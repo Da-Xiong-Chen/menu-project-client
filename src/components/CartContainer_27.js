@@ -47,7 +47,7 @@ const CartContainer = () => {
           </h4>
         </div>
   
-        <button className='custom-btn btn-3'><span><Link to={`https://menu-project-client.vercel.app/`} className='word' >點我重新點餐</Link></span></button>
+        <button className='custom-btn btn-3'><span><Link to={`https://meun-project-client-main.vercel.app/`} className='word' >點我重新點餐</Link></span></button>
 
 
         {/* <button className='btn clear-btn' onClick={clearCart}>

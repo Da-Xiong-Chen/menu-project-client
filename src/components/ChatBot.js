@@ -25,7 +25,7 @@ const ChatBot = () => {
     }, []);
     return (
         <>
-            <div id="fb-root" style={{ bottom: "3.5rem" }}></div>
+            <div id="fb-root"></div>
             <div ref={MessengerRef} id="fb-customer-chat" className="fb-customerchat"></div>
         </>
     );

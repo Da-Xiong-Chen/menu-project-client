@@ -4,7 +4,7 @@ import React, { useRef, useEffect } from 'react';
 const ChatBot = () => {
     const MessengerRef = useRef();
     useEffect(() => {
-        MessengerRef.current.setAttribute('page_id', '1002665243231102');
+        MessengerRef.current.setAttribute('page_id', '187860644404201');
         MessengerRef.current.setAttribute('attribution', 'biz_inbox');
     
         window.fbAsyncInit = function () {

@@ -89,12 +89,13 @@ const CartContainer = () => {
         </div>
   
         <h4 className='empty-cart'>點餐成功 請持此頁面至櫃台或使用悠遊付結帳<br/>線上結帳請於備註打上桌號以及點的餐點編號和點的數量<br/>例如12桌梅花豬肉鍋2份+4份麻辣鴨血請在備註打上12桌3*2+44*4</h4>
-        <div className='paymoney'>
+        <Link to={`https://epkaw.easycard.com.tw/deepLink/receiver/0/2202302053136152`} className='word' >
+          <div className='paymoney'>
             <img src='https://xuwztydqqoyqwrjsgfbd.supabase.co/storage/v1/object/public/demo-27/menu_project_img/money.png'></img>
-         </div>
+         </div></Link>
+        
 
          <button className='custom-btn btn-3'><span><Link to={`https://epkaw.easycard.com.tw/deepLink/receiver/0/2202302053136152`} className='word' >結帳去</Link></span></button>
-
 
         {/* <button className='btn clear-btn' onClick={clearCart}>
           送出

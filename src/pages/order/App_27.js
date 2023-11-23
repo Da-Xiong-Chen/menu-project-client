@@ -1,5 +1,5 @@
 import React from 'react';
-
+import ChatBot from '../../components/ChatBot';
 import { useGlobalContext_xx } from './Context_27';
 
 // components
@@ -20,6 +20,7 @@ const App_27 = () => {
     <main className='background'>
       <Navbar_27 />
       <CartContainer_27 />
+      <ChatBot/>
     </main>
   );
 };

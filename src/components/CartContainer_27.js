@@ -21,6 +21,12 @@ const CartContainer = () => {
   // const [amount, setAmount] = useState(0);
   const {cart, total, clearCart } = useGlobalContext_xx();
 
+  let discountedTotal = total;
+
+  if (discountedTotal > 259) {
+    discountedTotal -= 15; // 如果消費金額大於259，啟用折價15元的折扣
+  }
+
   if (cart.length === 0) {
     return (
       <section className='cart'>
@@ -66,9 +72,10 @@ const CartContainer = () => {
       <header>
       <div className='cart2'>       
         <h2>點餐成功</h2>
-        <h3>您點的項目</h3>
+        <h3>{inputValue}桌點選的項目</h3>
+        <h3>今日消費金額為 <span>${discountedTotal}</span><br/></h3>
         <h4>
-            今日消費金額為 <span>${total}</span>
+            若您消費超過259會為您折價15元
           </h4>
            <h4 className='empty-cart'>請持此頁面至櫃台或使用悠遊付支付</h4>
         </div>
@@ -84,11 +91,17 @@ const CartContainer = () => {
       <footer>
         <div className='cart-total'>
           <h4>
-            目前金額: <span>${total}</span>
+            原始金額: <span>${total}</span>
           </h4>
         </div>
   
-        <h4 className='empty-cart'>點餐成功 請持此頁面至櫃台或使用悠遊付結帳<br/>線上結帳請於備註打上桌號以及點的餐點編號和點的數量<br/>例如12桌梅花豬肉鍋2份+4份麻辣鴨血請在備註打上12桌3*2+44*4</h4>
+        <h4 className='empty-cart'>
+          點餐成功 請持此頁面至櫃台或使用悠遊付結帳<br/>
+          線上結帳請將繳費紀錄以及此頁面截圖<br/>
+          並利用右下角的messenger聊天機器人<br/>
+          將桌號以及繳費紀錄和此頁面截圖回傳給我們<br/>
+          好讓我們幫您出餐 感謝您的合作
+        </h4>
         <Link to={`https://epkaw.easycard.com.tw/deepLink/receiver/0/2202302053136152`} className='word' >
           <div className='paymoney'>
             <img src='https://xuwztydqqoyqwrjsgfbd.supabase.co/storage/v1/object/public/demo-27/menu_project_img/money.png'></img>

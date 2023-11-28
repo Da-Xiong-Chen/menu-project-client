@@ -99,7 +99,7 @@ const CartContainer = () => {
           點餐成功 請持此頁面至櫃台或使用悠遊付結帳<br/>
           線上結帳請將繳費紀錄以及此頁面截圖<br/>
           並利用右下角的messenger聊天機器人<br/>
-          將桌號以及繳費紀錄和此頁面截圖回傳給我們<br/>
+          將桌號以及繳費紀錄和此頁面截圖(也可以用打字的)回傳給我們<br/>
           好讓我們幫您出餐 感謝您的合作
         </h4>
         <Link to={`https://epkaw.easycard.com.tw/deepLink/receiver/0/2202302053136152`} className='word' >

@@ -75,9 +75,10 @@ const CartContainer = () => {
         <h3>{inputValue}桌點選的項目</h3>
         <h3>今日消費金額為 <span>${discountedTotal}</span><br/></h3>
         <h4>
-            若您消費超過259會為您折價15元
+            若您消費滿260會為您折價15元
           </h4>
-           <h4 className='empty-cart'>請持此頁面至櫃台或使用悠遊付支付</h4>
+           <h3 className='empty-cart'>請持此頁面至櫃台或使用悠遊付支付</h3>
+           <h4 className='empty-cart'>悠游付支付請繼續往下滑繳費</h4>
         </div>
 
       </header>
@@ -96,19 +97,20 @@ const CartContainer = () => {
         </div>
   
         <h4 className='empty-cart'>
-          點餐成功 請持此頁面至櫃台或使用悠遊付結帳<br/>
-          線上結帳請將繳費紀錄以及此頁面截圖<br/>
-          並利用右下角的messenger聊天機器人<br/>
-          將桌號以及繳費紀錄和此頁面截圖(也可以用打字的)回傳給我們<br/>
+          點餐成功 請先截圖(截餐點品項就好)<br/>
+          並點擊下方按鈕進行繳費(請於備註填寫桌號)<br/>
+          將您的點餐資訊截圖後<br/>
+          將桌號以及繳費紀錄和此頁面截圖透過回傳表單回傳給我們<br/>
           好讓我們幫您出餐 感謝您的合作
         </h4>
-        <Link to={`https://epkaw.easycard.com.tw/deepLink/receiver/0/2202302053136152`} className='word' >
+        {/* <Link to={`https://epkaw.easycard.com.tw/deepLink/receiver/0/2202302053136152`} className='word' >
           <div className='paymoney'>
             <img src='https://xuwztydqqoyqwrjsgfbd.supabase.co/storage/v1/object/public/demo-27/menu_project_img/money.png'></img>
-         </div></Link>
+         </div></Link> */}
         
 
          <button className='custom-btn btn-3'><span><Link to={`https://epkaw.easycard.com.tw/deepLink/receiver/0/2202302053136152`} className='word' >結帳去</Link></span></button>
+         <button className='custom-btn btn-11'><span><Link to={`https://docs.google.com/forms/d/1_BadIM7J-f7NMoaPNfyUqdDp_IvYeeQMf0Drbe5Gz4s/edit`} className='word' >回傳資訊<div class="dot"></div></Link></span></button>
 
         {/* <button className='btn clear-btn' onClick={clearCart}>
           送出

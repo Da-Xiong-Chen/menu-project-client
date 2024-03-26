@@ -1,6 +1,8 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import ChatBot from '../../components/ChatBot';
+
 
 
 
@@ -19,7 +21,7 @@ const ChoosePage = () => {
             <Link to={`/supa_cart_27?inputValue=${encodeURIComponent(inputValue)}`} className="submit"><button class="btn-hover color-2">直接點餐</button></Link>
             <Link to={`https://da-xiong-studio-business-card.vercel.app/random/index.html`}><button class="btn-hover color-1">隨機抽選</button></Link>
         
-            
+            <ChatBot/>
         </div>
         
 

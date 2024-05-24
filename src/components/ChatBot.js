@@ -4,7 +4,7 @@ import './chatbot.css'; // 引入 CSS 文件
 const ChatbotButton = () => {
     return (
         <a href="https://line.me/R/ti/p/%40983foizr" target="_blank" rel="noopener noreferrer" className="floating-button">
-            <img src="https://xuwztydqqoyqwrjsgfbd.supabase.co/storage/v1/object/public/demo-27/menu_project_img/line.png" alt="LINE" />
+            <img src="https://xuwztydqqoyqwrjsgfbd.supabase.co/storage/v1/object/public/demo-27/menu_project_img/LINE_logo.svg" alt="LINE" />
         </a>
     );
 };
